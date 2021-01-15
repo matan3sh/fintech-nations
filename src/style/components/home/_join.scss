@@ -1,0 +1,41 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: $nav-active;
+  height: 25vh;
+
+  h1 {
+    font-size: 50px;
+    font-family: SFProDisplay-Bold;
+    color: $nav-link-color;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.join__buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  a {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 14px 21px;
+    border-radius: 12px;
+    transition: 0.2s ease-in;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .right {
+    color: $btn-second-bg;
+    background-color: $btn-first-bg;
+  }
+  .left {
+    color: $btn-first-bg;
+    background-color: $nav-link-btn;
+  }
+}

@@ -1,0 +1,29 @@
+.agenda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  flex-direction: column;
+
+  h1 {
+    font-size: 50px;
+    font-family: SFProDisplay-Bold;
+    color: $nav-active;
+    margin-bottom: 1.5rem;
+  }
+  img {
+    width: 1000px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .agenda {
+    h1 {
+      font-size: 8.6041666666666665vw;
+    }
+    img {
+      width: 95%;
+    }
+  }
+}

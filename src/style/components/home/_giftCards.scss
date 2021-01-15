@@ -1,0 +1,52 @@
+.giftCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  width: 70%;
+  gap: 25px;
+  img {
+    width: 580px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    h5 {
+      font-family: SFProDisplay-Bold;
+      margin-bottom: 2rem;
+      font-size: 34px;
+    }
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .giftCards {
+    img {
+      width: 460px;
+    }
+    div {
+      h5 {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1195px) {
+  .giftCards {
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+    div {
+      h5 {
+        font-size: 24px;
+      }
+    }
+  }
+}

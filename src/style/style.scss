@@ -1,0 +1,24 @@
+// Setup
+@import 'setup/variables';
+@import 'setup/typography';
+
+// Basics
+@import 'basic/base';
+
+// Pages
+@import 'components/pages/home';
+
+// Home
+@import 'components/home/showcase';
+@import 'components/home/ourPartners';
+@import 'components/home/ourSupporters';
+@import 'components/home/about';
+@import 'components/home/agenda';
+@import 'components/home/giftCards';
+@import 'components/home/trackList';
+@import 'components/home/team';
+@import 'components/home/join';
+
+// Layout
+@import 'components/layout/navbar';
+@import 'components/layout/footer';

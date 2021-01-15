@@ -1,0 +1,160 @@
+.showcase {
+  width: 100vw;
+  max-width: 1920px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.showcase__right {
+  background-image: url('../assets/images/showcase.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 78%;
+}
+
+.showcase__left {
+  margin: auto;
+  width: 70%;
+}
+
+.showcase__left-wrapper {
+  h2 {
+    font-family: SFProDisplay-Light, sans-serif;
+    font-size: 21px;
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 58px !important;
+  }
+  h3 {
+    font-family: SFProDisplay-Light, sans-serif;
+    margin-top: 1.5rem;
+    font-size: 21px;
+  }
+}
+
+.showcase__buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  a {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 14px 21px;
+    border-radius: 12px;
+    transition: 0.2s ease-in;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .right {
+    color: $btn-second-bg;
+    background-color: $btn-first-bg;
+  }
+  .left {
+    color: $btn-first-bg;
+    background-color: $btn-second-bg;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .showcase__right {
+    width: 87%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .showcase__right {
+    width: 97%;
+  }
+  .showcase__left {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .showcase__right {
+    background-image: url('../assets/images/showcase_mobile.png');
+    background-size: contain;
+  }
+  .showcase {
+    width: 90%;
+  }
+  .showcase__left {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .showcase {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 75vh;
+  }
+  .showcase__right {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .showcase__left {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .showcase__right {
+    width: 100%;
+    // margin-left: 15px;
+  }
+  .showcase {
+    place-items: center;
+  }
+  .showcase__left {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .showcase {
+    width: 97%;
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .showcase__buttons {
+    margin-top: 2rem;
+    gap: 10px;
+    a {
+      font-size: 16px;
+      padding: 12px 17px;
+      &:hover {
+      }
+    }
+    .right {
+    }
+    .left {
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .showcase__left-wrapper {
+    h2 {
+      font-size: 18px;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 58px !important;
+    }
+    h3 {
+      margin-top: 0.5rem;
+      font-size: 18px;
+    }
+  }
+}
